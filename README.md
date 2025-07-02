@@ -319,16 +319,6 @@ express-demo/
 
 
 
-## Summary
-
--   Express.js is a minimalistic web framework for Node.js.
-    
--   It is used to build APIs, web servers, and scalable backend services.
-    
--   Easy to start but can be scaled to handle production-grade applications.
-    
-
-
 
 
 
@@ -533,17 +523,6 @@ require('dotenv').config();
 
 
 
-
-
-
-## Summary
-
--   Follow a modular and layered project structure from the beginning.
-    
--   Use environment variables for sensitive data.
-    
--   Always use middleware like `express.json()` for parsing requests.
-    
 
  
 
@@ -790,19 +769,8 @@ app.use((req, res) => {
 });
 ```
 
+
  
-
-## Summary
-
--   Express routing handles HTTP methods, parameters, and query strings.
-    
--   Use `express.Router()` for modular code organization.
-    
--   Route chaining improves readability.
-    
--   Use wildcards and fallback routes for error handling.
-    
-
  
 
 
@@ -1058,15 +1026,6 @@ app.listen(3000, () => {
 
  
 
-## Summary
-
--   Middleware is the **core foundation** of Express.
-    
--   Types include application-level, router-level, third-party, built-in, and error-handling.
-    
--   Middleware runs in the order it is declared.
-    
--   Proper middleware design leads to clean, scalable, and secure applications.
     
 
  
@@ -1287,15 +1246,6 @@ app.get('/unauthorized', (req, res) => {
 
  
 
-## Summary
-
--   Use `req` object to read URL parameters, query strings, headers, and body.
-    
--   Use `res` object to send responses with appropriate headers, status codes, and formats.
-    
--   Handle file uploads securely using `multer`.
-    
--   Body parsing uses `express.json()` for JSON and `express.urlencoded()` for form data.
     
 
  
@@ -1310,16 +1260,16 @@ app.get('/unauthorized', (req, res) => {
 REST (Representational State Transfer) is an architectural style for designing APIs based on **HTTP methods** and **stateless communication**. RESTful APIs expose resources through endpoints, supporting CRUD operations.
 
  
-
 ## RESTful HTTP Methods Mapping
 
 | HTTP Method | Operation | Description |
-|   |   |   |
+| --- | --- | --- |
 | **GET** | Read | Fetch data |
 | **POST** | Create | Create new data |
 | **PUT** | Update | Update/replace |
 | **PATCH** | Partial Update | Partially update data |
 | **DELETE** | Delete | Remove data |
+
 
  
 ## Standard RESTful Endpoint Example for `users`
@@ -1509,15 +1459,6 @@ DELETE http://localhost:3000/api/users/1
     
 
  
-
-## Summary
-
--   REST API development in Express involves using HTTP methods and route structures effectively.
-    
--   Organize the API into controllers and routes for clean separation.
-    
--   Handle status codes and errors properly for production-ready APIs.
-    
 
  
 
@@ -1771,16 +1712,6 @@ This is an advanced topic covered in-depth in authentication frameworks or the P
     
 
  
-
-## Summary
-
--   JWT is a stateless authentication method ideal for APIs.
-    
--   Middleware protects routes by verifying tokens.
-    
--   RBAC controls permissions based on user roles.
-    
--   Proper error handling and token management are essential for secure systems.
     
 
  
@@ -2069,17 +2000,7 @@ try {
 
  
 
-## Summary
-
--   Express supports both MongoDB (via Mongoose) and SQL databases (via Sequelize, Knex).
     
--   Follow model-controller patterns to organize DB interactions.
-    
--   Use async/await with proper error handling.
-    
--   Support transactions for operations needing atomicity.
-    
-
  
 
 
@@ -2291,19 +2212,6 @@ app.use('/api/v2/users', require('./routes/v2/userRoutes'));
 
  
 
-## Summary
-
--   Use **versioned routes** to future-proof your API.
-    
--   **Nested routes** handle parent-child relationships cleanly.
-    
--   Apply **parameter middleware** to avoid repetition in ID handling.
-    
--   Centralize error handling for cleaner, production-safe APIs.
-    
--   Maintain RESTful conventions for consistency and clarity.
-    
-
  
 
 
@@ -2504,16 +2412,6 @@ app.use((err, req, res, next) => {
 
  
 
-## Summary
-
--   Use **express-validator** for input validation and sanitization.
-    
--   Create a **middleware-based error handler** for cleaner routes.
-    
--   Return consistent and developer-friendly error responses.
-    
--   Combine with centralized error handling for production safety.
-    
 
  
 
@@ -2701,18 +2599,6 @@ app.post('/upload', upload.single('file'), (req, res) => {
 Organize uploads by type for easy maintenance.
 
  
-
-## Summary
-
--   Use **Multer** for handling file uploads locally.
-    
--   Implement **file validation** (types, size).
-    
--   Serve files statically or via secure routes.
-    
--   Use **cloud storage (AWS S3, Cloudinary)** for scalability.
-    
--   Always consider file security: filename sanitization, path traversal protection, and storage best practices.
     
 
  
@@ -3206,18 +3092,6 @@ utils/math.js|   100   |    100   |   100   |   100
 
  
 
-## Summary
-
--   Use **Jest** for unit and integration tests.
-    
--   Use **Supertest** for API route testing.
-    
--   Mock database interactions for isolated tests.
-    
--   Include error handling and edge cases in tests.
-    
--   Run with coverage for quality tracking.
-    
 
  
 
