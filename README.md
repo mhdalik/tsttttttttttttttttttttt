@@ -2836,11 +2836,6 @@ JWT_SECRET=yourjwtsecret
 -   ✅ Serve static assets with caching when needed.
     
 
- 
-
-## Summary
-
-Security and performance aren't optional — they're mandatory for production APIs. Express provides middleware-first architecture to easily plug these features into your backend.
 
  
 
@@ -3331,16 +3326,6 @@ jobs:
     
 -   ✅ Configure CI/CD for auto-deployment.
     
-
- 
-
-## Summary
-
--   Express apps are production-ready when secured, managed (via PM2/Docker), and reverse proxied (via NGINX).
-    
--   HTTPS is mandatory via Certbot or similar.
-    
--   CI/CD automates deployment on every push to main branch.
     
 
  
@@ -3534,16 +3519,7 @@ npm install socket.io-redis
 -   Handle reconnections and errors gracefully.
     
 
- 
 
-## Summary
-
--   Socket.IO provides easy real-time communication over WebSockets (with fallback to HTTP long-polling).
-    
--   Supports features like rooms, namespaces, broadcasting.
-    
--   Combine with REST API for hybrid apps: REST for CRUD + WebSocket for live data.
-    
 
  
 
